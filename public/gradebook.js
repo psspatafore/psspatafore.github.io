@@ -18,7 +18,7 @@ function fetchGradeData() {
       }
       //And then call the function to update the HTML with our data
       populateGradebook(JSON.parse(xhr.responseText));
-    }
+      }
   }.bind(this);
   xhr.open("get", apiRoute, true);
   xhr.send();
